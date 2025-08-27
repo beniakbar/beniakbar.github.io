@@ -749,6 +749,13 @@ a img:hover {
   }
 } */
 
+@media (max-width: 765px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+
 /* TODO */
 /* Images */
 .carousel-item img {
@@ -941,6 +948,7 @@ h6 {
     height: 5px;
     margin-top: 30px;
 }
+
 
 
 
@@ -2307,6 +2315,41 @@ blockquote {
         padding-top: 85px !important;
     }
 
+    #banner-content {
+        display: flex;
+        flex-direction: row;  /* tetap samping-sampingan */
+        align-items: flex-start;
+    }
+
+    #banner-content .col-38 {
+        width: 60%;   /* teks lebih kecil */
+        text-align: left; /* biar tetap rata kiri */
+    }
+
+    #banner-content img {
+        width: 35%;          /* biar tidak makan space terlalu besar */
+        max-width: 140px;    /* biar tetap proporsional */
+        height: auto;
+        object-fit: contain; /* gambar utuh, tidak kepotong */
+        object-position: right; /* pastikan geser ke kanan bukan crop */
+    }
+
+     #banner h1 {
+        font-size: 24px !important;
+        line-height: 1.2 !important;
+    }
+
+    #banner h2,
+    #banner p {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+    }
+
+    #banner .button {
+        display: none !important;
+    }
+
+
     /*-----------------Sections-----------------*/
 
     /* Call to Action*/
@@ -2352,7 +2395,7 @@ blockquote {
 
     #wrapper {
         margin:0;
-        padding:0;
+        padding:0;   
     }
 
     .page-border, #scrollUp, #scrollUp:before {
@@ -2405,6 +2448,48 @@ blockquote {
         margin-right: -40px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #banner-content {
+        display: flex;
+        flex-direction: row;
+        
+        text-align: left;
+    }
+
+    #banner-content .col-38 {
+        width: 100%;
+    }
+
+    #banner-content img {
+        width: 60%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #banner-content h1 {
+        font-size: 32px !important;
+        line-height: 1.3 !important;
+    }
+
+    #banner-content h2 {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+    }
+
+    #banner-content .button {
+        font-size: 13px !important;
+        padding: 10px 16px !important;
+    }
+
+    #section-title {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+    }
+
+    banner .button {
+        display: none !important;
     }
 
     /*-----------------Sections-----------------*/
@@ -2470,6 +2555,7 @@ blockquote {
         padding-left: 20px;
         padding-right: 20px;
     }
+    
 
     /*-----------------Sections-----------------*/
 
@@ -2485,6 +2571,33 @@ blockquote {
 
 }
 
+/* ===== About - Skills Section Force Override ===== */
+section#about .col-2.icon-block.icon-top {
+  display: flex !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  margin: 15px 0 !important;
+}
 
+section#about .col-2.icon-block.icon-top .icon {
+  margin-right: 15px !important;
+  margin-bottom: 0 !important;
+  flex-shrink: 0 !important;
+  color: #f4b400 !important; /* gold accent */
+}
+
+section#about .col-2.icon-block.icon-top .icon-block-description h4 {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-bottom: 5px !important;
+  color: #111 !important;
+}
+
+section#about .col-2.icon-block.icon-top .icon-block-description p {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  color: #444 !important;
+}
 
 

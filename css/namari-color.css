@@ -123,10 +123,21 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Banner Background and Text Colors */
 
+/* Default untuk desktop */
 #banner {
-    background: url("../images/banner-images/banner-image-1.jpg") no-repeat center top;
-    background-size:cover;
+    background: url("../images/banner-images/banner-image-1.jpg") no-repeat right center;
+    background-size: cover;
 }
+
+/* Untuk mobile kecil */
+@media (max-width: 480px) {
+    #banner {
+        height: 400px;                  /* atur tinggi sesuai kebutuhan */
+        background-position: center 20%; /* atur area penting terlihat */
+    }
+}
+
+
 
 
 /*------------------------------------------------------------------------------------------*/
